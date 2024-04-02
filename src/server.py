@@ -23,7 +23,7 @@ class Server:
         samples_width (int): The width of each audio sample in bits.
         connected_clients (dict): A dictionary mapping client IDs to Client objects.
     """
-    def __init__(self, vad_pipeline, asr_pipeline, host='localhost', port=8765, sampling_rate=16000, samples_width=2):
+    def __init__(self, vad_pipeline, asr_pipeline, host='0.0.0.0', port=7900, sampling_rate=16000, samples_width=2):
         self.vad_pipeline = vad_pipeline
         self.asr_pipeline = asr_pipeline
         self.host = host

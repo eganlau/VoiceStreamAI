@@ -10,7 +10,7 @@ let context;
 let processor;
 let globalStream;
 
-const websocket_uri = 'ws://localhost:8765';
+const websocket_uri = 'ws://localhost:8700';
 const bufferSize = 4096;
 let isRecording = false;
 
